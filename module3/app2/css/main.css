@@ -1,0 +1,146 @@
+/*p{
+	color: red;
+}
+.blue{
+	color: blue;
+}
+.button {
+	border: none;
+	background-color: red;
+	height: 30px;
+	width: 60px;
+	border-radius: 10px;
+	transition: 0.3s;
+
+
+}
+
+.button__blue {
+	background-color: blue;
+}
+
+.button__green {
+	background-color: green;
+}
+
+.button__hover:hover {
+	background-color: orange;
+}
+
+.box {
+	display: flex; разворачивает блоки в строку 
+	height: 200px;
+	width: 1000px;
+	background-color: rgba(0,0,255,0.3);
+	/*align-items: center; /*ai tab
+	-ms-align-items: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.item {
+	width: 400px;
+	height: 100px;
+	margin: 10px;
+	background-color: dodgerblue;
+
+}
+.end {
+	align-self: stretch;
+	height: auto;
+}*/
+
+/*@keyframes popup {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.15);
+	}
+
+	100% {
+		transform: scale(1.10);
+	}
+}*/
+
+* {
+	margin: 0; /*m0*/
+	padding: 0; /*p0*/
+	-webkit-box-sizing: border-box; /*bxz*/
+	-moz-box-sizing: border-box; /*bxz*/
+	box-sizing: border-box; /*bxz*/
+
+}
+
+.main-heading, .heading {
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+/*	padding: 5px 5px;*/
+}
+
+.heading {
+	font-weight: normal;
+	margin: 1.5em 0; /*em - единица измерения заданной ширины шрифта*/
+}
+.main {
+	background-color: hsl(60, 71%, 86%);
+/*	height: 100vh;*/
+}
+
+.box {
+	width: 90%;
+	max-width: 1100px;
+	margin: auto;
+	/*height: 100vh; /*h100vh*/
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 3.8em 0;
+	justify-content: center;
+}
+
+.item {
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	background-position: center; /*bgp*/
+	-webkit-background-size: cover;
+	background-size: cover; /*bgsc*/
+}
+
+.link_wrapper {
+	display: block;
+	width: calc(100% / 2 - 10px);
+	height: calc(90vw / 2 / 16 * 9 - 10px); /*vw viewport*/
+	max-height: calc(1100px / 2 / 16 * 9 - 10px);
+	border: 5px solid white;
+	/*transition: transform 0.3s linear;*/
+	transition: transform 0.3s cubic-bezier(.18,.99,.18,.04);
+	/*animation: popup 0.5s alternate both;*/
+}
+
+
+
+@media all and (min-width: 1024px) { /*этот код не будет работать на тачдевайсах*/
+	.link_wrapper:hover {
+		transform: scale(1.1); /*масштабирование на 10%*/
+		/*animation: popup 0.5s both;*/
+		z-index: 10;
+		box-shadow: 0 0 10px 1px rgba(0,0,0,0.35);
+
+	}
+}
+
+@media all and (max-width: 768px) {
+	.link_wrapper {
+		width: 100%;
+/*		height: calc(90vw / 4 / 16 * 9 - 10px); vw viewport
+		max-height: calc(1100px / 4 / 16 * 9 - 10px);
+		background-color: green;
+		margin: 5px;*/
+		margin: 5px 0;
+		height: calc(90vw / 16 * 9); 
+	}
+}
